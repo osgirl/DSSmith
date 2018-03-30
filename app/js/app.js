@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    console.log("document ready");
+    $('#searchToggle').on('click', function(){
+        $('#floating-search-wrapper').toggleClass('hidden');
+    });
 });

@@ -1,34 +1,32 @@
-.header-wrapper{
-    background-color: #a0d043;
-}
-.navbar{
-    list-style: none;
-    height: 50px;
-    margin-bottom: 0;
-    font-size: 22px;
-    li{
-        display: inline-block;
-        margin: 0 20px;
-        padding:20px 0;
-        &.active{
-            border-bottom: 1px solid red;
-            &>a{
-                color: red;
-            }
+#header-banner{
+    position: relative;
+    .polygon{
+        height: 487px;
+        background: radial-gradient(lighten($primaryBGcolor, 30%) 10%, $primaryBGcolor 70%);
+        color: $primaryColor;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), calc(100% - 200px) calc(100% - 200px), calc(100% - 800px) 100%, 0 100%);
+        >.wrapper{
+            position: relative;
+            top: 180px;
         }
     }
-}
-.navbar-brand{
-    display:inline-block;
-    width:150px;
-    height: 50px;
-    margin: 5px 0 0 5px;
-    background: url('../assets/images/DSSmith-logo-color.png') no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    text-indent: -999px;
-    
-}
-#primary-nav .navbar-nav, #secondary-nav {
-    margin: 0 auto;
+    h1{
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin:0;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 36px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .bearbox{
+        position: absolute;
+        top:70px;
+        right: 0;
+        max-width: none;
+        width: auto;
+    }
 }

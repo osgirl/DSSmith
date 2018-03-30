@@ -1,25 +1,11 @@
-@define-mixin atSmall {
-  @media (min-width: 530px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMedium {
-  @media (min-width: 800px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atLarge {
-  @media (min-width: 1010px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin clearfix {
+@mixin clearfix {
   &::after {
     content: "";
     clear: both;
     display: table;
   }
+}
+
+@mixin decopolygon($height) {
+  clip-path: polygon(0 350px, 300px 600px, 2500px 0, 2500px $height, 0 $height);
 }

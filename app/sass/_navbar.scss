@@ -1,0 +1,128 @@
+$navbarHeight: 75px;
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: $navbarHeight;
+}
+.navbar{
+    list-style: none;
+    height: $navbarHeight;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0;
+    li{
+        display: inline-block;
+        margin: 20px 20px 0 20px;
+        line-height: 23px;
+        padding-bottom: 30px;
+        &.active{
+            border-bottom: 2px solid $secondaryColor;
+            &>a{
+                color: $secondaryColor;
+            }
+        }
+    }
+    &_center {
+        justify-content: center;
+    }
+}
+.navbar-brand{
+    display: block;
+    width:150px;
+    height: $navbarHeight;
+    margin: 10px 0 0 5px;
+    background: url('../assets/images/DSSmith-logo-color.png') no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    text-indent: -999px;
+}
+#primary-nav{
+    background: rgba($color: #FFF, $alpha: .5);
+    z-index: 100;
+    height: $navbarHeight;
+    .stock-ticker{
+        font-size: 12px;
+        font-weight: 300;
+        padding-top: 10px;
+        .fluctuation{
+            display: inline-block;
+            font-size: 120%;
+            padding:5px 5px 0 5px;
+            vertical-align: middle;
+        }
+    }
+}
+.floating-navbar-wrapper{
+    position: absolute;
+    background: rgba($color: $primaryColor, $alpha: .5);
+    z-index: 90;
+    width: 100%;
+    height: $navbarHeight;
+}
+#floating-search-wrapper{
+    position: absolute;
+    background: rgba($color: #000, $alpha: .8);
+    opacity: 1;
+    z-index: 10;
+    transform: scale(1); 
+    transition: all .5s ease-out;
+    width: 100%;
+    height: $navbarHeight;
+    top: $navbarHeight;
+    &.hidden{
+        transform: scale(1.5);
+        z-index: -10;
+        opacity: 0;
+        
+    }
+}
+#secondary-nav {
+    height: $navbarHeight;
+    a{
+        color: #FFF;
+    }
+    .active{
+        border-bottom: 2px solid #FFF;
+    }
+    &>.navbar{
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &>#searchToggle{
+        margin: 20px 0;
+        position: absolute;
+        right:10px;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.searchButton{
+    background: transparent;
+    color: #FFF;
+    border:0;
+    width: 25px;
+    font-size: 20px;
+    &:hover{
+        cursor: pointer; 
+    }
+    &:focus{
+        outline: none;
+    }
+
+}
+.searchForm{
+    width: 400px;
+    padding-top: 20px;
+    margin: 0 auto;
+    transition: all 2s linear;
+    .searchTerm {
+        border:0;
+        width: 370px;
+    }
+}

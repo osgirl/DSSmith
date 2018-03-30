@@ -7,15 +7,17 @@
     <title>DS Smith Corporate | About</title>
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </head>
 
 <body>
     <header>
         <div class="row">
-            <a class="navbar-brand" href="#">DS Smith</a>
-            <div id="primary-nav">
-                <ul class="navbar">
+            <div id="primary-nav" class="navbar-wrapper">
+                <a class="navbar-brand" href="#">DS Smith</a>
+                <ul class="navbar navbar_center">
                     <li class="active">
                         <a href="#">Corporate</a>
                     </li>
@@ -32,145 +34,284 @@
                         <a href="#">Plastics</a>
                     </li>
                 </ul>
+                <div class="stock-ticker">
+                    <p>5.37 GBP
+                        <span class="fluctuation"><i class="fas fa-sort-up"></i></span>+0,66</p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div id="secondary-nav">
-                <ul class="navbar">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">People</a>
-                    </li>
-                    <li>
-                        <a href="#">Investors</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+            <div class="floating-navbar-wrapper">
+                <div id="secondary-nav">
+                    <ul class="navbar">
+                        <li class="active">
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Investors</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <button id="searchToggle" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
             </div>
-            <div class="search">
-                <form class="navbar pull-right">
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
+            <div id="floating-search-wrapper" class="hidden">
+                <div class="searchForm">
+                    <input type="text" class="searchTerm" placeholder="">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
             </div>
-        </div>
-        <div class="full-width">
-            <div class="wrapper">
-                <h1>Flies off the shelf</h1>
-                <p>Sell confectionary like hotcakes with strategic packaging</p>
-                <img src="./assets/images/bear.png" alt="">
+
+            <div id="header-banner">
+                <div class="polygon">
+                    <div class="wrapper">
+                        <h1>Flies off the shelf</h1>
+                        <p>Sell confectionary like hotcakes
+                            <br> with strategic packaging</p>
+                    </div>
+                </div>
+                <img src="./assets/images/bear.png" alt="" class="bearbox">
             </div>
         </div>
         <div class="wrapper">
-            <p>70% of confectionary purchase decisions are made in-store. Think about that for a second …
-                <br> That’s right, brand recognition and on-shelf availability have never been more important.
-                <br> Strategic packaging helps you delight your customers, lower your costs and protect your products – all thanks
-                to its transformative power.</p>
+            <div class="indented">
+                <p>70% of confectionary purchase decisions are made in-store. Think about that for a second …</p>
+                <p> That’s right,
+                    <strong>brand recognition and on-shelf availability</strong> have never been more important.</p>
+                <p> Strategic packaging helps you delight your customers, lower your costs and protect your products – all thanks
+                    to its transformative power.</p>
+            </div>
         </div>
         </div>
     </header>
-
-    <div class="wrapper">
-        <section>
-            <h2>Confectionary today: short &amp; sweet</h2>
-            <p>Confectionary, sweet biscuits and snacks are on the upswing. Over the next five years, the European confectionery
-                market will grow by 19%.
-                <br> At the same time, the importance of packaging has taken flight. Individually wrapped candies in a stand-up
-                pouch are trending, while re-sealable packaging gives consumers more control.
-            </p>
-            <blockquote>Take a more detailed look at the future of the European confectionary market</blockquote>
-        </section>
-
-        <section>
-            <h2>Streamline your in-store operations</h2>
-            <h3>80% of success is showing up</h3>
-            <p>Point-of-purchase marketing makes a huge difference in sales – especially in confectionary. But without easy-to-use
-                packaging, your product likely won’t make it to the storefront, let alone your customers’ shopping baskets.</p>
-            <h3> SRP helps you when &amp; where it matter most</h3>
-            <p> Shelf Ready Packaging decreases handling times while increasing in-store sales. Thanks to clear signage, improved
-                stackability, and strategically placed perforations, your products will make it to the shelves in record
-                time.
-            </p>
-            <p> SRP doesn’t only make sure you’re there, it helps you present your product in full form. With free advertising
-                space in the most relevant place you’ll be the envy of every marketeer.</p>
-
-            <div class="fact">5-10% of your products are unavailable in stores right now. </div>
-            <img src="assets/images/SRP-video.jpg" alt="">
-            <div class="time">3:32</div>
-            Get your consumer’s attention with SRP
-        </section>
-        <section>
-            <h2>Improve your shopper experience</h2>
-            <div class="fact">
-                70% of confectionary purchase decisions are made in-store.
-            </div>
-
-
-            <h3>The necessity of in-store marketing</h3>
-            <p>Mere moments – that’s how long you have to convince prospective sweet-tooths. So if your brand is not immediately
-                identifiable, your sales will never reach its full potential.</p>
-            <p> Confectionary, sweet biscuits and snacks typically have a faster decision process than any other FMCG, so in-store
-                marketing probably is nothing new for you.</p>
-            <p>But what if you could take in-store marketing to the next level and stand out from your competition?</p>
-
-            <h3>Displays that make you stand out</h3>
-            <p>Corrugated Point of Sale (POS) and Point of Purchase (POP) displays grab consumers’ attention like no other and
-                give you plenty of advertising room. Two-for-one – what’s not to like?</p>
-            <p>Free standing display units, modular displays, standees or counter top displays? Our packaging strategists will
-                work together with your marketing team to design and produce innovative displays for your products.</p>
-            <p>Corrugated POS &amp; POP displays raise brand awareness, stimulate successful product launches and increase sales.
-            </p>
-            <img src="assets/images/displays.jpg" alt="">
-        </section>
-        <section>
-            <h2>Increase your supply chain efficiency</h2>
-            <h3>Don’t do damaged goods</h3>
-            <p>Production, transport or in-store – your products pass through so many containers and hands that the occasional
-                damaged goods seem inevitable. The consequences of damaged products, however, should not be underestimated:
-                lost sales, frustrated customers, and a weakened brand image will surely hurt your bottom line. Having trouble
-                with lost goods? Time to up your packaging quality.</p>
-
-            <h3>PACE: the quality sweet spot</h3>
-            <p>Performance, assurance, consistent and environmental excellence – PACE, the new DS Smith golden standard, offers
-                the full package.</p>
-            <p>Through rigorous new testing methods, the assurance of high-quality raw materials and a strategic analysis of
-                your entire supply chain, we can deliver packaging that dramatically decreases product damage and increases
-                supply chain efficiency.</p>
-        </section>
-        <section>
-            <h2>Talk to our confectionary packaging strategists</h2>
-            <p>Would you like to enjoy the sweet smell of success? Get in touch and we’ll help you in any way we can.</p>
-
-        </section>
-    </div>
-    <div class="footer-wrapper">
-        <div class="wrapper">
-            <footer>
-                <div class="navbar">
-                    <ul>
-                        <li>Name</li>
-                        <li>Function</li>
-                        <li>Company</li>
-                        <li>Email</li>
-                        <li>Get in touch</li>
-                    </ul>
+    <div class="row">
+        <div class="confectionary-wrapper">
+            <section class="confectionary">
+                <h2>Confectionary today:
+                    <br>short &amp; sweet</h2>
+                <div class="indented">
+                    <p>Confectionary, sweet biscuits and snacks are on the upswing. Over the next five years, the European confectionery
+                        market will
+                        <strong>grow by 19%</strong>.
+                        <br> At the same time,
+                        <strong>the importance of packaging has taken flight</strong>. Individually wrapped candies in a stand-up
+                        pouch are trending, while re-sealable packaging gives consumers more control.
+                    </p>
                 </div>
-                
-            </footer>
-            <div class="navbar">
-                <ul>
-                    <li>About</li>
-                    <li>People</li>
-                    <li>Investors </li>
-                    <li>Contact</li>
-                </ul>
-            </div>
+                <div class="quote">
+                    <blockquote>Take a more detailed look at the future of
+                        <br> the European confectionary market</blockquote>
+                    <div id="confectionary-more">
+                        <a href="#">
+                            <i class="fas fa-chevron-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="confectionary-polygon"></div>
+    <div class="row">
+        <div class="wrapper">
+            <section>
+                <h2>Streamline your in-store operations</h2>
+                <div class="indented">
+                    <div class="col-wrapper">
+                        <div class="leftcol-large">
+                            <h3>80% of success is showing up</h3>
+                            <p>
+                                <strong>Point-of-purchase marketing</strong> makes a huge difference in sales – especially in confectionary.
+                                But without easy-to-use packaging, your product likely won’t make it to the storefront, let
+                                alone your customers’ shopping baskets.</p>
+                            <h3> SRP helps you when &amp; where it matter most</h3>
+                            <p> Shelf Ready Packaging decreases handling times while increasing in-store sales. Thanks to clear
+                                signage, improved stackability, and
+                                <strong>strategically placed perforations</strong>, your products will make it to the shelves in
+                                record time.
+                            </p>
+                            <p> SRP doesn’t only make sure you’re there, it helps you present your product in full form. With
+                                free
+                                <strong>advertising space in the most relevant place</strong> you’ll be the envy of every marketeer.</p>
+                        </div>
+                        <div class="rightcol-small">
+                            <div class="fact">
+                                <div class="fact-content">
+                                    <span>5-10%</span> of your products are unavailable in stores right now.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-image">
+                            <img src="assets/images/SRP-video.jpg" alt="">
+                        </div>
+                        <div class="video-playbutton"></div>
+                        <div class="video-info">
+                            <div class="time">3:32</div>
+                            <div class="video-text">Get your consumer’s attention with SRP</div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
 
+
+            </section>
+            <section>
+                <h2>Improve your shopper experience</h2>
+                <div class="indented">
+                    <div class="col-wrapper">
+                        <div class="leftcol">
+                            <div class="fact">
+                                <div class="fact-content">
+                                    <span>70%</span> of confectionary purchase decisions are made in-store.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightcol">
+                            <h3>The necessity of in-store marketing</h3>
+                            <p>Mere moments – that’s how long you have to convince prospective sweet-tooths. So if your brand
+                                is not immediately identifiable, your sales will never reach its full potential.</p>
+                            <p> Confectionary, sweet biscuits and snacks typically have a faster decision process than any other
+                                FMCG, so in-store marketing probably is nothing new for you.</p>
+                            <p>But what if you could take in-store marketing to the next level and stand out from your competition?</p>
+                        </div>
+                    </div>
+                    <div class="col-wrapper">
+                        <div class="leftcol">
+                            <h3>Displays that make you stand out</h3>
+                            <p>Corrugated Point of Sale (POS) and Point of Purchase (POP) displays grab consumers’ attention
+                                like no other and give you plenty of advertising room. Two-for-one – what’s not to like?</p>
+                            <p>Free standing display units, modular displays, standees or counter top displays? Our packaging
+                                strategists will work together with your marketing team to design and produce innovative
+                                displays for your products.</p>
+                            <p>Corrugated POS &amp; POP displays raise brand awareness, stimulate successful product launches
+                                and increase sales.</p>
+                        </div>
+                        <div class="rightcol">
+                            <img src="assets/images/displays.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </section>
+            <section>
+                <h2>Increase your supply chain efficiency</h2>
+                <div class="indented">
+                    <div class="col-wrapper">
+                        <div class="leftcol">
+                            <img src="assets/images/damaged-goods.jpg" alt="" class="breakout">
+                        </div>
+                        <div class="rightcol">
+                            <h3>Don’t do damaged goods</h3>
+                            <p>Production, transport or in-store – your products pass through so many containers and hands that
+                                the occasional damaged goods seem inevitable. The consequences of damaged products, however,
+                                should not be underestimated: lost sales, frustrated customers, and a weakened brand image
+                                will surely hurt your bottom line. Having trouble with lost goods? Time to up your packaging
+                                quality.
+                            </p>
+
+                            <h3>PACE: the quality sweet spot</h3>
+                            <p>Performance, assurance, consistent and environmental excellence – PACE, the new DS Smith golden
+                                standard, offers the full package.</p>
+                            <p>Through rigorous new testing methods, the assurance of high-quality raw materials and a strategic
+                                analysis of your entire supply chain, we can deliver packaging that dramatically decreases
+                                product damage and increases supply chain efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section>
+                <h2>Talk to our confectionary packaging strategists</h2>
+                <div class="indented">
+                    <p class="contact-intro">Would you like to enjoy the sweet smell of success?
+                        <br> Get in touch and we’ll help you in any way we can.</p>
+                    <form action="" class="contact-form">
+                        <div class="fields">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Function">
+                            <input type="text" placeholder="Company">
+                            <input type="email" placeholder="Email">
+                        </div>
+
+                        <button type="submit" id="formsubmit">Get in touch</button>
+                    </form>
+                </div>
+
+            </section>
         </div>
     </div>
 
+
+    <div class="footer-wrapper">
+        <div class="footerdecoration-polygon"></div>
+        <div class="footerdecoration">
+            <div class="logo">
+                <img src="../assets/images/DSSmith-logo-white.png" alt="">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="navbar-wrapper">
+                <a class="navbar-brand" href="#">DS Smith</a>
+                <div class="navbar">
+                    <ul>
+                        <li class="active">
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Investors</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social navbar">
+                    <ul>
+                        <li>
+                            <a href="#" class="linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
 </body>
+
 </html>

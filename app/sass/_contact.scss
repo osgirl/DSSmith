@@ -1,0 +1,27 @@
+.contact-intro{
+    font-size: $fontsize-large;
+    color: #000;
+}
+.contact-form{
+    .fields{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    input{
+        font-weight: 100;
+        width: 49%;
+        border: none;
+        border-bottom: 1px solid $fontColor;
+        margin-bottom: 50px;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+#formsubmit{
+    background-color: $secondaryColor;
+    padding: 20px 40px;
+    border:0;
+    color: #FFF;
+}

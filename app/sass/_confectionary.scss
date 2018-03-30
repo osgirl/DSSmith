@@ -1,0 +1,55 @@
+.confectionary-wrapper {
+    width: 1180px;
+    margin:100px auto;
+    margin-bottom: 0;
+}
+.confectionary {
+    background: url('../assets/images/confectionary.png') no-repeat;
+    background-size: 60%; 
+    background-position: right top;
+    &-polygon {
+        $confectionarypolygon-height:600px;
+        height: $confectionarypolygon-height;
+        margin-top: -$confectionarypolygon-height;
+        @include decopolygon($confectionarypolygon-height);
+        //clip-path: polygon(0 50%, 20% 100%, 100% 0, 100% 100%, 0 100%);
+        background: rgba($color: #000000, $alpha: .25);
+    }
+    h2{
+        padding-top: 30px;
+    }
+    .indented{
+        width: 420px;
+    }
+    .quote{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 10;
+    }
+    blockquote{
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: $fontsize-large;
+        text-align: right;
+        font-weight: 100;
+        color: #FFF;
+    }
+}
+#confectionary-more {
+    margin-top:35px;
+    margin-left: 20px;
+    height: 50px;
+    z-index: 20;
+    position: relative;
+    a{
+        display: block;
+        width: 50px;
+        line-height: 50px;
+        font-size: 50px;
+        color:$secondaryColor;
+        &:hover{
+            cursor: auto;
+        }
+    }
+}

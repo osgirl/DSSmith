@@ -1,0 +1,41 @@
+.footerdecoration {
+    position: absolute;
+    right: 50px;
+    height: 200px;
+    margin-top: -200px;
+    $footerpolygon-height: 700px;
+    &-polygon {
+    height: $footerpolygon-height;
+    margin-top: -$footerpolygon-height/2;
+    @include decopolygon($footerpolygon-height);
+    background: $primaryBGcolor;
+    z-index: -10;
+    position: relative;
+  }
+  .logo {
+    width: 240px;
+  }
+}
+.footer{
+    ul{
+     margin-top: 5px;   
+    }
+    li{
+        margin-top:0;
+    }
+}
+.social{
+    li{
+        margin: 5px;
+    }
+    a{
+        text-align: center;
+        line-height: 25px;
+        display: inline-block;
+        width: 30px;
+        height:30px;
+        background: $fontColor;
+        color: #FFF;
+        border-radius: 50%;
+    }
+}
