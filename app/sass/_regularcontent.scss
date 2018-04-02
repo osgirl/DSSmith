@@ -1,169 +1,177 @@
 .col-wrapper {
   display: flex;
   flex-direction: column;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     flex-direction: row;
     justify-content: space-between;
   }
   margin-bottom: 88px;
-  &:last-of-type{
+  &:last-of-type {
     margin-bottom: 53px;
   }
 }
 .leftcol {
   width: 100%;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     width: 300px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     width: 340px;
   }
-  @include breakpoint(xl){
-    width:470px;
+  @include breakpoint(xl) {
+    width: 470px;
   }
-  
+
   .breakout {
     margin-left: 0;
     width: 100%;
-    @include breakpoint(md){
+    @include breakpoint(md) {
       margin-left: -38px;
       width: calc(100% + 38px);
     }
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       margin-left: -48px;
       width: calc(100% + 48px);
     }
-    @include breakpoint(xl){
+    @include breakpoint(xl) {
       margin-left: -58px;
       width: calc(100% + 58px);
     }
   }
 }
-.leftcol-large{
+.leftcol-large {
   width: 100%;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     width: 400px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     width: 480px;
   }
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     width: 605px;
   }
 }
-.rightcol{
+.rightcol {
   width: 100%;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     width: 350px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     width: 460px;
   }
-  @include breakpoint(xl){
+  @include breakpoint(xl) {
     width: 530px;
   }
 }
-.rightcol-small{
+.rightcol-small {
   width: 100%;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     width: 220px;
   }
-  @include breakpoint(lg){
+  @include breakpoint(lg) {
     width: 300px;
   }
-  @include breakpoint(xl){
-    width:385px;
+  @include breakpoint(xl) {
+    width: 385px;
   }
 }
-.rightcol .fact, .rightcol-small .fact{
+.rightcol .fact,
+.rightcol-small .fact {
   margin-top: 100px;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     margin-top: 0;
   }
 }
-.leftcol .fact, .leftcol-large .fact{
+.leftcol .fact,
+.leftcol-large .fact {
   margin-bottom: 100px;
-  @include breakpoint(md){
+  @include breakpoint(md) {
     margin-bottom: 0;
   }
 }
 
-.fact{
+.fact {
   color: $primaryColor;
-  width: 300px;
+  width: 250px;
+  @include breakpoint(lg) {
+    width: 300px;
+  }
   font-size: $fontsize-large;
   font-style: oblique;
   font-weight: 100;
-  &-content{
+  &-content {
     padding: 10px 30px;
     line-height: 1.5;
   }
-  span{
+  span {
     display: block;
-    font-size: 76px;
-
+    font-size: 64px;
+    @include breakpoint(lg) {
+      font-size: 76px;
+    }
   }
-  &::before, &::after{
-    content:"";
+  &::before,
+  &::after {
+    content: "";
     display: block;
     width: 25px;
     height: 25px;
     border-left: 2px solid $primaryColor;
   }
-  &::before{
-    border-top:2px solid $primaryColor;
+  &::before {
+    border-top: 2px solid $primaryColor;
   }
-  &::after{
-    border-bottom:2px solid $primaryColor;
+  &::after {
+    border-bottom: 2px solid $primaryColor;
   }
 }
-.video{
+.video {
   position: relative;
-  .video-playbutton{
+  .video-playbutton {
     position: absolute;
-    top:50%;
+    top: 50%;
     width: 90px;
     height: 90px;
-    @include breakpoint(sm){
-      top:25%;
+    @include breakpoint(sm) {
+      top: 25%;
       width: 100px;
       height: 100px;
     }
-    @include breakpoint(md){
-      top:30%;
+    @include breakpoint(md) {
+      top: 30%;
       width: 150px;
       height: 150px;
     }
-    @include breakpoint(lg){
-      top:35%;
+    @include breakpoint(lg) {
+      top: 35%;
     }
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background: url('../assets/images/play.png') no-repeat;
+    background: url("../assets/images/play.png") no-repeat;
     background-size: contain;
     z-index: 10;
   }
-  .video-image img{
+  .video-image img {
     display: block;
   }
-  .video-info{
+  .video-info {
     position: absolute;
     width: 100%;
     height: 50%;
-    padding: 15px 50px;   
-    @include breakpoint(md){
+    padding: 15px 50px;
+    @include breakpoint(md) {
       height: 35%;
-      padding: 25px 100px;   
+      padding: 25px 100px;
     }
-    color: #FFF; 
-    bottom:0;
-    background: rgba($color: #000000, $alpha: .5);
+    color: #fff;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.5);
     @include show-from(sm);
   }
-  .video-text{
+  .video-text {
     font-size: $fontsize-base;
     margin-top: 5px;
-    @include breakpoint(lg){
+    @include breakpoint(lg) {
       font-size: $fontsize-large;
       margin-top: 25px;
     }

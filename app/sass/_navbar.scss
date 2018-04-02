@@ -95,6 +95,8 @@ $navbarHeight: 75px;
     border-bottom: 2px solid #fff;
   }
   > .navbar {
+    display: flex;
+    flex-wrap: nowrap;
     position: absolute;
     top: 0;
     left: 50%;
