@@ -13,7 +13,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+        <div class="mobile-nav">
+            <a class="navbar-brand" href="#">DS Smith</a>
+            <div id="menu-icon">
+                <div class="menu-icon-bar"></div>
+            </div>
+        </div>
+
         <div class="row">
             <div id="primary-nav" class="navbar-wrapper">
                 <a class="navbar-brand" href="#">DS Smith</a>
@@ -34,9 +41,11 @@
                         <a href="#">Plastics</a>
                     </li>
                 </ul>
-                <div class="stock-ticker">
+                <div class="stock-ticker show-lg">
                     <p>5.37 GBP
-                        <span class="fluctuation"><i class="fas fa-sort-up"></i></span>+0,66</p>
+                        <span class="fluctuation">
+                            <i class="fas fa-sort-up"></i>
+                        </span>+0,66</p>
                 </div>
             </div>
         </div>
@@ -70,31 +79,34 @@
                     </button>
                 </div>
             </div>
-
-            <div id="header-banner">
-                <div class="polygon">
-                    <div class="wrapper">
-                        <h1>Flies off the shelf</h1>
-                        <p>Sell confectionary like hotcakes
-                            <br> with strategic packaging</p>
-                    </div>
-                </div>
-                <img src="./assets/images/bear.png" alt="" class="bearbox">
-            </div>
-        </div>
-        <div class="wrapper">
-            <div class="indented">
-                <p>70% of confectionary purchase decisions are made in-store. Think about that for a second …</p>
-                <p> That’s right,
-                    <strong>brand recognition and on-shelf availability</strong> have never been more important.</p>
-                <p> Strategic packaging helps you delight your customers, lower your costs and protect your products – all thanks
-                    to its transformative power.</p>
-            </div>
-        </div>
         </div>
     </header>
     <div class="row">
-        <div class="confectionary-wrapper">
+        <div id="header-banner">
+            <div class="polygon">
+                <div class="wrapper wrapper-notopmar">
+                    <h1>Flies off the shelf</h1>
+                    <p>Sell confectionary like hotcakes
+                        <br> with strategic packaging</p>
+                </div>
+            </div>
+            <div class="bearbox">
+                <img src="./assets/images/bear.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="indented">
+            <p>70% of confectionary purchase decisions are made in-store. Think about that for a second …</p>
+            <p> That’s right,
+                <strong>brand recognition and on-shelf availability</strong> have never been more important.</p>
+            <p> Strategic packaging helps you delight your customers, lower your costs and protect your products – all thanks
+                to its transformative power.</p>
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="wrapper wrapper-nobotmar">
             <section class="confectionary">
                 <h2>Confectionary today:
                     <br>short &amp; sweet</h2>
@@ -108,8 +120,7 @@
                     </p>
                 </div>
                 <div class="quote">
-                    <blockquote>Take a more detailed look at the future of
-                        <br> the European confectionary market</blockquote>
+                    <blockquote>Take a more detailed look at the future of the European confectionary market</blockquote>
                     <div id="confectionary-more">
                         <a href="#">
                             <i class="fas fa-chevron-circle-right"></i>
@@ -261,7 +272,7 @@
         <footer class="footer">
             <div class="navbar-wrapper">
                 <a class="navbar-brand" href="#">DS Smith</a>
-                <div class="navbar">
+                <div class="navbar show-lg">
                     <ul>
                         <li class="active">
                             <a href="#">About</a>

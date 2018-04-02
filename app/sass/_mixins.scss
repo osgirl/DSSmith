@@ -6,6 +6,13 @@
   }
 }
 
-@mixin decopolygon($height) {
-  clip-path: polygon(0 350px, 300px 600px, 2500px 0, 2500px $height, 0 $height);
+@mixin decopolygon($height: 600px, $width: 2500px) {
+  clip-path: polygon(0 350px, 300px 600px, $width 0, $width $height, 0 $height);
+}
+
+@mixin show-from($width){
+  display: none;
+  @include breakpoint($width){
+    display: block;
+  }
 }

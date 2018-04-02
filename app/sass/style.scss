@@ -1,12 +1,14 @@
 // Algemeen
 @import "normalize";
+@import "breakpoints";
 @import "fonts";
 @import "variables";
-@import "global";
 @import "mixins";
+@import "global";
 @import "row";
 @import "navbar";
 @import "header";
+@import "mobilemenu";
 @import "confectionary";
 @import "regularcontent";
 @import "contact";

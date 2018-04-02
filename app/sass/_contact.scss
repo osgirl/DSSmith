@@ -6,11 +6,15 @@
     .fields{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
     }
     input{
         font-weight: 100;
-        width: 49%;
+        width: 100%;
+        @include breakpoint(md){
+            width: 49%;
+        }
         border: none;
         border-bottom: 1px solid $fontColor;
         margin-bottom: 50px;

@@ -4,29 +4,65 @@
         height: 487px;
         background: radial-gradient(lighten($primaryBGcolor, 30%) 10%, $primaryBGcolor 70%);
         color: $primaryColor;
-        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), calc(100% - 200px) calc(100% - 200px), calc(100% - 800px) 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 100px) calc(100% - 100px), calc(100% - 400px) 100%, 0 100%);
+        @include breakpoint(lg){
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 80px), calc(100% - 200px) calc(100% - 200px), calc(100% - 800px) 100%, 0 100%);
+        }
         >.wrapper{
             position: relative;
             top: 180px;
         }
     }
     h1{
-        font-size: 60px;
+        font-size: $fontsize-xlarge;
         text-transform: uppercase;
         font-weight: 100;
         margin:0;
         margin-bottom: 10px;
+        @include breakpoint(sm){
+            font-size: 45px;
+        }
+        @include breakpoint(lg){
+            font-size: 60px;
+        }
     }
     p{
-        font-size: 36px;
+        font-size: $fontsize-base;
         font-weight: 300;
         margin: 0;
+        @include breakpoint(sm){
+            font-size: 28px;
+        }
+        @include breakpoint(lg){
+            font-size: $fontsize-xlarge;
+        }
     }
     .bearbox{
+        img{
+            position: absolute;
+        }
         position: absolute;
-        top:70px;
-        right: 0;
-        max-width: none;
-        width: auto;
+        //max-width: none;
+        top:310px;
+        right: -20px;
+        width: 500px;
+        @include breakpoint(md){
+            top:200px;
+            right: -150px;
+            width: 800px;
+        }
+        @include breakpoint(lg){
+            top:120px;
+            right: -200px;
+            width: 1000px;
+        }
+        @include breakpoint(xl){
+            top:70px;
+            right: -200px;
+            width: 1140px;
+        }
+        @include breakpoint(xxl){
+            right: 0;
+        }
     }
 }
