@@ -646,52 +646,57 @@ hr {
       position: relative;
       top: 180px; }
   #header-banner h1 {
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: 100;
     margin: 0;
-    margin-bottom: 10px; }
+    margin-bottom: 0; }
     @media screen and (min-width: 576px) {
       #header-banner h1 {
-        font-size: 45px; } }
+        font-size: 45px;
+        margin-bottom: 10px; } }
     @media screen and (min-width: 992px) {
       #header-banner h1 {
         font-size: 60px; } }
   #header-banner p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin: 0; }
     @media screen and (min-width: 576px) {
       #header-banner p {
-        font-size: 28px; } }
+        font-size: 24px; } }
+    @media screen and (min-width: 768px) {
+      #header-banner p {
+        font-size: 26px; } }
     @media screen and (min-width: 992px) {
+      #header-banner p {
+        font-size: 34px; } }
+    @media screen and (min-width: 1200px) {
       #header-banner p {
         font-size: 36px; } }
   #header-banner .bearbox {
     position: absolute;
     top: 310px;
-    right: -20px;
-    width: 500px; }
+    right: 0;
+    width: 480px; }
     #header-banner .bearbox img {
       position: absolute; }
     @media screen and (min-width: 768px) {
       #header-banner .bearbox {
         top: 200px;
-        right: -150px;
-        width: 800px; } }
+        width: 650px; } }
     @media screen and (min-width: 992px) {
       #header-banner .bearbox {
-        top: 120px;
-        right: -200px;
-        width: 1000px; } }
+        top: 190px;
+        width: 800px; } }
     @media screen and (min-width: 1200px) {
       #header-banner .bearbox {
-        top: 70px;
-        right: -200px;
-        width: 1140px; } }
+        top: 140px;
+        width: 940px; } }
     @media screen and (min-width: 1400px) {
       #header-banner .bearbox {
-        right: 0; } }
+        top: 70px;
+        width: 1140px; } }
 
 .mobile-nav {
   display: none; }
@@ -1007,23 +1012,23 @@ hr {
   position: relative; }
   .video .video-playbutton {
     position: absolute;
-    top: 25%;
-    width: 150px;
-    height: 150px;
+    top: 50%;
+    width: 90px;
+    height: 90px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     background: url("../assets/images/play.png") no-repeat;
     background-size: contain;
     z-index: 10; }
     @media screen and (min-width: 576px) {
       .video .video-playbutton {
-        top: 15%;
+        top: 25%;
         width: 100px;
         height: 100px; } }
     @media screen and (min-width: 768px) {
       .video .video-playbutton {
-        top: 25%;
+        top: 30%;
         width: 150px;
         height: 150px; } }
     @media screen and (min-width: 992px) {
@@ -1127,6 +1132,12 @@ hr {
 
 .footer .navbar li.active {
   border-bottom: none; }
+
+.footer .navbar-brand {
+  display: none; }
+  @media screen and (min-width: 576px) {
+    .footer .navbar-brand {
+      display: block; } }
 
 .social li {
   margin: 5px; }

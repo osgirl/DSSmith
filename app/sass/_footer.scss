@@ -48,6 +48,12 @@
     .navbar li.active{
         border-bottom: none;
     }
+    .navbar-brand{
+        display: none;
+        @include breakpoint(sm){
+            display: block;
+        }
+    }
 }
 .social{
     li{
