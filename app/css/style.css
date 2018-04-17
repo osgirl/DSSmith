@@ -692,11 +692,11 @@ hr {
         width: 650px; } }
     @media screen and (min-width: 992px) {
       #header-banner .bearbox {
-        top: 190px;
+        top: 140px;
         width: 800px; } }
     @media screen and (min-width: 1200px) {
       #header-banner .bearbox {
-        top: 140px;
+        top: 80px;
         width: 940px; } }
     @media screen and (min-width: 1400px) {
       #header-banner .bearbox {

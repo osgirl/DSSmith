@@ -58,11 +58,11 @@
             width: 650px;
         }
         @include breakpoint(lg){
-            top:190px;
+            top:140px;
             width: 800px;
         }
         @include breakpoint(xl){
-            top:140px;
+            top:80px;
             width: 940px;
         }
         @include breakpoint(xxl){
